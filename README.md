@@ -1,6 +1,4 @@
-Market Observatory 
-
-www.market-observatory.com 
+Market Observatory | www.market-observatory.com 
 
 Mike Aguilar | mike.aguilar@duke.edu | https://www.linkedin.com/in/mike-aguilar-econ/
 
