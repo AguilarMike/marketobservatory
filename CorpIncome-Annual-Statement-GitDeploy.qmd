@@ -1,0 +1,211 @@
+---
+title: "Corporate Income Statement"
+subtitle: "Last Updated: `r format(Sys.time(), '%B %d, %Y at %I:%M %p')`,, tz = 'America/New_York')` EST"
+author: 
+  Mike Aguilar<br>
+  /in/mike-aguilar-econ/<br>
+  mike.aguilar at duke.edu 
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc-depth: 5
+    toc-location: left
+    embed-resources: true
+    df-print: paged
+    #css: SampleDocument1.css
+editor: visual
+
+execute:
+  warning: false
+  echo: false
+---
+
+```{r}
+#| echo: false
+cat("\014")  # clear console
+rm(list=ls())  # Clear the workspace
+```
+
+```{r}
+#| message: false
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(tidyverse)
+library(ggplot2)
+library(ggrepel)
+library(knitr)
+library(corrplot)
+library(cowplot) 
+library(ggfortify)
+library(moments)
+library(zoo)
+library(scales)
+library(stringr)
+library(readr)
+library(readxl)
+library(openxlsx)
+library(knitr)
+library(kableExtra)
+library(here)
+```
+
+```{r}
+#Local
+#load("../Data/CorpIncome-Annual-Data.RData")
+#Git
+load(here::here("data", "CorpIncome-Annual-Data.RData"))
+```
+
+```{r}
+DesiredColOrder<- 
+  c(
+"Corp.GrossProfit",
+"Corp.Depreciation",
+"Corp.OpEx",
+"Corp.OpEx.EmpComp",
+"Corp.OpEx.EmpComp.WageSalary",
+"Corp.OpEx.EmpComp.Supplements",
+"Corp.OpEx.TaxOnProductionLessSubsidy",
+"Corp.NetOpSurplus",
+"Corp.Interest",
+"Corp.Transfers",
+"Corp.IncomeTax",
+"Corp.Dividends",
+"Corp.IVA",
+"Corp.CCAdj",
+"Corp.EBT.GAAP",
+"Corp.ReceiptsRestOfWorld",
+"Corp.PaymentsToRestOfWorld",
+"Corp.NetIncome.GAAP",
+"Corp.RetainedEarnings.GAAP",
+"Corp.EBT.NonGAAP",
+"Corp.NetIncome.NonGAAP",
+"Corp.RetainedEarnings.NonGAAP",
+"Corp.RetentionRatio",
+"Corp.PayoutRatio",
+"Corp.TaxRate"
+)
+
+
+
+
+temp <- CorpIncome.Annual.Data.Long %>%
+  select(-delta)%>%
+  filter(Date %in% sort(unique(Date),decreasing = TRUE)[1:4])%>%
+  filter(variable %in% DesiredColOrder) 
+
+temp.wide <- temp %>%
+  pivot_wider(
+    names_from = Date, 
+    values_from = value
+  ) %>%
+  arrange(factor(variable, levels = DesiredColOrder))  # enforce row order here
+
+```
+
+```{r}
+
+temp.wide <- temp.wide %>%
+  left_join(metadata %>% select(VariableName, AccountingConcept),
+            by = c("variable" = "VariableName")) 
+
+temp.wide<-temp.wide %>%
+  group_by(AccountingConcept)%>%
+  select(-variable)%>%
+  select(AccountingConcept,everything())#%>%
+  #rename("Accounting Concept" = AccountingConcept)
+
+temp.wide <- temp.wide %>%
+  rename("Accounting Concept" = AccountingConcept)
+```
+
+```{r}
+# Make a copy of the data
+temp.wide.f <- temp.wide
+
+# Identify numeric columns (excluding the first column)
+num_cols <- which(sapply(temp.wide.f, is.numeric))
+num_cols <- num_cols[num_cols != 1]  # exclude first column
+
+# Convert numeric columns to character to allow formatted assignment
+temp.wide.f[num_cols] <- lapply(temp.wide.f[num_cols], as.character)
+
+# Format rows with 3 decimals
+for (col in num_cols) {
+  temp.wide.f[27, col] <- format(round(as.numeric(temp.wide[27, col]), 3), nsmall = 3)
+  temp.wide.f[28, col] <- format(round(as.numeric(temp.wide[28, col]), 3), nsmall = 3)
+  temp.wide.f[29, col] <- format(round(as.numeric(temp.wide[29, col]), 3), nsmall = 3)
+}
+
+# Format all other rows with commas and no decimals
+other_rows <- setdiff(seq_len(nrow(temp.wide.f)), 27:29)
+
+for (col in num_cols) {
+  temp.wide.f[other_rows, col] <- format(
+    round(as.numeric(temp.wide[[col]][other_rows]), 0),
+    big.mark = ",", nsmall = 0
+  )
+}
+
+```
+
+```{r}
+# Create a blank row with "GAAP" in the first column
+gaap_row <- temp.wide.f[1, ]  # Copy structure
+gaap_row[1, ] <- NA         # Blank all values
+gaap_row[1, "Accounting Concept"] <- "GAAP"
+
+# Insert the row after row 14
+temp.wide.f <- bind_rows(
+  temp.wide.f[1:14, ],
+  gaap_row,
+  temp.wide.f[15:nrow(temp.wide.f), ]
+)
+nongaap_row <- temp.wide.f[1, ]  # Copy structure
+nongaap_row[1, ] <- NA         # Blank all values
+nongaap_row[1, "Accounting Concept"] <- "NonGAAP"
+
+# Insert the row after
+temp.wide.f <- bind_rows(
+  temp.wide.f[1:20, ],
+  nongaap_row,
+  temp.wide.f[21:nrow(temp.wide.f), ]
+)
+
+ratiorate_row <- temp.wide.f[1, ]  # Copy structure
+ratiorate_row[1, ] <- NA         # Blank all values
+ratiorate_row[1, "Accounting Concept"] <- "Ratios & Rates (%)"
+
+# Insert the row after 
+temp.wide.f <- bind_rows(
+  temp.wide.f[1:28, ],
+  ratiorate_row,
+  temp.wide.f[29:nrow(temp.wide.f), ]
+)
+```
+
+```{r}
+# Now pass to kable
+opts <- options(knitr.kable.NA = "")
+
+knitr::kable(temp.wide.f, 
+             align = "l", 
+             format = "html", 
+             caption = "Corporate Income Statement (Mln$)"
+             ) %>%
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed"), 
+    full_width = FALSE,
+    font_size = 12
+  ) %>%
+  row_spec(4, extra_css = "padding-left: 20px; font-size: 11px;") %>%
+  row_spec(5, extra_css = "padding-left: 30px; font-size: 11px;") %>%
+  row_spec(6, extra_css = "padding-left: 30px; font-size: 11px;") %>%
+  row_spec(7, extra_css = "padding-left: 20px; font-size: 11px;") %>%
+  row_spec(15, bold = TRUE) %>%
+  row_spec(21, bold = TRUE) %>%
+  row_spec(29, bold = TRUE)
+
+```
