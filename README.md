@@ -12,6 +12,8 @@ U.S. National Income
 
 - Corporate Income Statement (Quarterly) https://aguilarmike.github.io/marketobservatory/CorpIncome-Quarterly-Statement-GitDeploy.html
 
+- National Income EDA by Industry https://aguilarmike.github.io/marketobservatory/Industry-National-Quarterly-Presentation-GitDeploy.html
+
 U.S. Fiscal Policy 
 
 - Federal Fiscal Policy KPIs: https://aguilarmike.github.io/marketobservatory/MacroKPI-Presentation.html#/title-slide
