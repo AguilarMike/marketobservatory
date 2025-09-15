@@ -8,7 +8,7 @@
 
 <meta name="author" content="Mike Aguilar  /in/mike-aguilar-econ/  mike.aguilar at duke.edu">
 
-<title>National Income Statement</title>
+<title>Industry Income Statement (Quarterly)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -3664,21 +3664,111 @@ window.onload = function() {
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-full toc-left">
 <div id="quarto-sidebar-toc-left" class="sidebar toc-left">
-  
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#all" id="toc-all" class="nav-link active" data-scroll-target="#all">All</a>
+  <ul>
+  <li><a href="#pvt" id="toc-pvt" class="nav-link" data-scroll-target="#pvt">Pvt</a>
+  <ul class="collapse">
+  <li><a href="#ag" id="toc-ag" class="nav-link" data-scroll-target="#ag">Ag</a></li>
+  <li><a href="#ag.farms" id="toc-ag.farms" class="nav-link" data-scroll-target="#ag.farms">Ag.Farms</a></li>
+  <li><a href="#ag.forest" id="toc-ag.forest" class="nav-link" data-scroll-target="#ag.forest">Ag.Forest</a></li>
+  <li><a href="#min" id="toc-min" class="nav-link" data-scroll-target="#min">Min</a>
+  <ul class="collapse">
+  <li><a href="#min.oilgas" id="toc-min.oilgas" class="nav-link" data-scroll-target="#min.oilgas">Min.OilGas</a></li>
+  <li><a href="#min.xoilgas" id="toc-min.xoilgas" class="nav-link" data-scroll-target="#min.xoilgas">Min.XOilGas</a></li>
+  <li><a href="#min.suppt" id="toc-min.suppt" class="nav-link" data-scroll-target="#min.suppt">Min.Suppt</a></li>
+  </ul></li>
+  <li><a href="#utl" id="toc-utl" class="nav-link" data-scroll-target="#utl">Utl</a></li>
+  <li><a href="#constr" id="toc-constr" class="nav-link" data-scroll-target="#constr">Constr</a></li>
+  <li><a href="#mfg" id="toc-mfg" class="nav-link" data-scroll-target="#mfg">Mfg</a>
+  <ul class="collapse">
+  <li><a href="#mfg.durgds" id="toc-mfg.durgds" class="nav-link" data-scroll-target="#mfg.durgds">Mfg.DurGds</a></li>
+  <li><a href="#mfg.xdurgds" id="toc-mfg.xdurgds" class="nav-link" data-scroll-target="#mfg.xdurgds">Mfg.XDurGds</a></li>
+  </ul></li>
+  <li><a href="#wholsl" id="toc-wholsl" class="nav-link" data-scroll-target="#wholsl">Wholsl</a></li>
+  <li><a href="#rtl" id="toc-rtl" class="nav-link" data-scroll-target="#rtl">Rtl</a>
+  <ul class="collapse">
+  <li><a href="#rtl.motoveh" id="toc-rtl.motoveh" class="nav-link" data-scroll-target="#rtl.motoveh">Rtl.MotoVeh</a></li>
+  <li><a href="#rtl.foodbev" id="toc-rtl.foodbev" class="nav-link" data-scroll-target="#rtl.foodbev">Rtl.FoodBev</a></li>
+  <li><a href="#rtl.genmerch" id="toc-rtl.genmerch" class="nav-link" data-scroll-target="#rtl.genmerch">Rtl.GenMerch</a></li>
+  <li><a href="#rtl.oth" id="toc-rtl.oth" class="nav-link" data-scroll-target="#rtl.oth">Rtl.Oth</a></li>
+  </ul></li>
+  <li><a href="#trans" id="toc-trans" class="nav-link" data-scroll-target="#trans">Trans</a>
+  <ul class="collapse">
+  <li><a href="#trans.air" id="toc-trans.air" class="nav-link" data-scroll-target="#trans.air">Trans.Air</a></li>
+  <li><a href="#trans.rail" id="toc-trans.rail" class="nav-link" data-scroll-target="#trans.rail">Trans.Rail</a></li>
+  <li><a href="#trans.water" id="toc-trans.water" class="nav-link" data-scroll-target="#trans.water">Trans.Water</a></li>
+  <li><a href="#trans.truck" id="toc-trans.truck" class="nav-link" data-scroll-target="#trans.truck">Trans.Truck</a></li>
+  <li><a href="#trans.transit" id="toc-trans.transit" class="nav-link" data-scroll-target="#trans.transit">Trans.Transit</a></li>
+  <li><a href="#trans.pipe" id="toc-trans.pipe" class="nav-link" data-scroll-target="#trans.pipe">Trans.Pipe</a></li>
+  <li><a href="#trans.oth" id="toc-trans.oth" class="nav-link" data-scroll-target="#trans.oth">Trans.Oth</a></li>
+  <li><a href="#trans.warehs" id="toc-trans.warehs" class="nav-link" data-scroll-target="#trans.warehs">Trans.Warehs</a></li>
+  </ul></li>
+  <li><a href="#info" id="toc-info" class="nav-link" data-scroll-target="#info">Info</a>
+  <ul class="collapse">
+  <li><a href="#info.publ" id="toc-info.publ" class="nav-link" data-scroll-target="#info.publ">Info.Publ</a></li>
+  <li><a href="#info.motionpic" id="toc-info.motionpic" class="nav-link" data-scroll-target="#info.motionpic">Info.MotionPic</a></li>
+  <li><a href="#info.bcast" id="toc-info.bcast" class="nav-link" data-scroll-target="#info.bcast">Info.Bcast</a></li>
+  <li><a href="#info.dataproc" id="toc-info.dataproc" class="nav-link" data-scroll-target="#info.dataproc">Info.DataProc</a></li>
+  </ul></li>
+  <li><a href="#fin" id="toc-fin" class="nav-link" data-scroll-target="#fin">Fin</a>
+  <ul class="collapse">
+  <li><a href="#fin.finins" id="toc-fin.finins" class="nav-link" data-scroll-target="#fin.finins">Fin.FinIns</a></li>
+  <li><a href="#fin.rent" id="toc-fin.rent" class="nav-link" data-scroll-target="#fin.rent">Fin.REnt</a></li>
+  </ul></li>
+  <li><a href="#prfsrv" id="toc-prfsrv" class="nav-link" data-scroll-target="#prfsrv">PrfSrv</a>
+  <ul class="collapse">
+  <li><a href="#prfsrv.sci" id="toc-prfsrv.sci" class="nav-link" data-scroll-target="#prfsrv.sci">PrfSrv.Sci</a></li>
+  <li><a href="#prfsrv.mgmt" id="toc-prfsrv.mgmt" class="nav-link" data-scroll-target="#prfsrv.mgmt">PrfSrv.Mgmt</a></li>
+  <li><a href="#prfsrv.admwst" id="toc-prfsrv.admwst" class="nav-link" data-scroll-target="#prfsrv.admwst">PrfSrv.AdmWst</a></li>
+  </ul></li>
+  <li><a href="#eduhth" id="toc-eduhth" class="nav-link" data-scroll-target="#eduhth">EduHth</a>
+  <ul class="collapse">
+  <li><a href="#eduhth.edu" id="toc-eduhth.edu" class="nav-link" data-scroll-target="#eduhth.edu">EduHth.Edu</a></li>
+  <li><a href="#eduhth.hth" id="toc-eduhth.hth" class="nav-link" data-scroll-target="#eduhth.hth">EduHth.Hth</a></li>
+  </ul></li>
+  <li><a href="#artacmdfd" id="toc-artacmdfd" class="nav-link" data-scroll-target="#artacmdfd">ArtAcmdFd</a>
+  <ul class="collapse">
+  <li><a href="#artacmdfd.art" id="toc-artacmdfd.art" class="nav-link" data-scroll-target="#artacmdfd.art">ArtAcmdFd.Art</a></li>
+  <li><a href="#artacmdfd.acmdfdsrv" id="toc-artacmdfd.acmdfdsrv" class="nav-link" data-scroll-target="#artacmdfd.acmdfdsrv">ArtAcmdFd.AcmdFdSrv</a></li>
+  </ul></li>
+  <li><a href="#othsrvsxgov" id="toc-othsrvsxgov" class="nav-link" data-scroll-target="#othsrvsxgov">OthSrvsXGov</a></li>
+  </ul></li>
+  <li><a href="#gov" id="toc-gov" class="nav-link" data-scroll-target="#gov">Gov</a>
+  <ul class="collapse">
+  <li><a href="#fed" id="toc-fed" class="nav-link" data-scroll-target="#fed">Fed</a>
+  <ul class="collapse">
+  <li><a href="#fed.gen" id="toc-fed.gen" class="nav-link" data-scroll-target="#fed.gen">Fed.Gen</a></li>
+  <li><a href="#fed.enterp" id="toc-fed.enterp" class="nav-link" data-scroll-target="#fed.enterp">Fed.Enterp</a></li>
+  </ul></li>
+  <li><a href="#stloc" id="toc-stloc" class="nav-link" data-scroll-target="#stloc">StLoc</a>
+  <ul class="collapse">
+  <li><a href="#stloc.gen" id="toc-stloc.gen" class="nav-link" data-scroll-target="#stloc.gen">StLoc.Gen</a></li>
+  <li><a href="#stloc.enterp" id="toc-stloc.enterp" class="nav-link" data-scroll-target="#stloc.enterp">StLoc.Enterp</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#pvtgds" id="toc-pvtgds" class="nav-link" data-scroll-target="#pvtgds">PvtGds</a></li>
+  <li><a href="#pvtsrvs" id="toc-pvtsrvs" class="nav-link" data-scroll-target="#pvtsrvs">PvtSrvs</a></li>
+  </ul>
+</nav>
 </div>
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
 </div>
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-right" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">National Income Statement</h1>
-<p class="subtitle lead">Last Updated: September 15, 2025 at 06:19 PM EST</p>
+<h1 class="title">Industry Income Statement (Quarterly)</h1>
+<p class="subtitle lead">Last Updated: September 15, 2025 at 10:20 PM</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-right">
 
     <div>
     <div class="quarto-title-meta-heading">Author</div>
@@ -3696,176 +3786,39 @@ window.onload = function() {
 </header>
 
 
+<p>BEA data is relatively sparse for industry income at the quarterly frequency. In the following we provide Gross Revenues, COGS, and Gross Margins. I will be adding more items as data and time permits.</p>
 <div class="cell">
 <div style="page-break-after: always;"></div>
 </div>
+<section id="all" class="level1">
+<h1>All</h1>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table table-striped table-hover table-condensed caption-top table-sm small">
-<caption>National Income Statement (Mln$)</caption>
+<caption>Industry Income Statement (Mln$, SAAR) – All</caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">2021</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">2022</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">2023</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">2024</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Gross Revenue</td>
-<td style="text-align: left;">41,809,300</td>
-<td style="text-align: left;">46,633,500</td>
-<td style="text-align: left;">48,386,800</td>
-<td style="text-align: left;">50,579,800</td>
+<td style="text-align: left;">50,260,700</td>
+<td style="text-align: left;">50,898,500</td>
+<td style="text-align: left;">51,454,200</td>
+<td style="text-align: left;">52,046,000</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">COGS</td>
-<td style="text-align: left;">18,128,200</td>
-<td style="text-align: left;">20,626,600</td>
-<td style="text-align: left;">20,666,100</td>
-<td style="text-align: left;">21,394,900</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">COGS (Energy)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">913,000</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,169,800</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">949,600</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">COGS (Materials)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">6,258,400</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">7,260,000</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">6,918,300</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">NA</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">COGS (Services)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">10,956,800</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">12,196,800</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">12,798,100</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">NA</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Gross Profit</td>
-<td style="text-align: left;">23,681,171</td>
-<td style="text-align: left;">26,006,893</td>
-<td style="text-align: left;">27,720,709</td>
-<td style="text-align: left;">29,184,890</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">OpEx (Total)</td>
-<td style="text-align: left;">13,658,430</td>
-<td style="text-align: left;">15,176,351</td>
-<td style="text-align: left;">15,999,871</td>
-<td style="text-align: left;">16,914,227</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">OpEx (Employee Comp)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">12,568,208</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">13,454,101</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">14,209,569</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">15,040,606</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">OpEx (Wages and Salary)</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">10,326,780</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">11,140,500</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">11,744,624</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">12,421,771</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">OpEx (Supplements)</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">2,241,427</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">2,313,601</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">2,464,944</td>
-<td style="text-align: left; padding-left: 30px; font-size: 11px;">2,618,835</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">OpEx (Tax on Product)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,700,089</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,850,248</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,893,110</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,968,179</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">OpEx (Subsidies)</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">609,867</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">127,998</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">102,808</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">94,558</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">EBITDA</td>
-<td style="text-align: left;">10,022,741</td>
-<td style="text-align: left;">10,830,542</td>
-<td style="text-align: left;">11,720,838</td>
-<td style="text-align: left;">12,270,663</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Depreciation</td>
-<td style="text-align: left;">3,871,365</td>
-<td style="text-align: left;">4,313,370</td>
-<td style="text-align: left;">4,587,749</td>
-<td style="text-align: left;">4,816,259</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Operating Income (EBIT), Output Perspective</td>
-<td style="text-align: left;">6,151,376</td>
-<td style="text-align: left;">6,517,172</td>
-<td style="text-align: left;">7,133,089</td>
-<td style="text-align: left;">7,454,404</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">Statiscal Discrepancy</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,592</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">-75,585</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">244,619</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">192,156</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Operating Income (EBIT)</td>
-<td style="text-align: left;">6,149,784</td>
-<td style="text-align: left;">6,592,757</td>
-<td style="text-align: left;">6,888,471</td>
-<td style="text-align: left;">7,262,248</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">Business Transfers</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">192,416</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">245,228</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">236,197</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">290,516</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">Proprietors&#39; Income</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,815,266</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,873,555</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,948,994</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">2,005,862</td>
-</tr>
-<tr class="even">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">Rental Income</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">772,259</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">870,266</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">989,079</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">1,056,862</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">Interest Expense</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">705,457</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">739,705</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">689,987</td>
-<td style="text-align: left; padding-left: 20px; font-size: 11px;">605,383</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">EBT</td>
-<td style="text-align: left;">5,444,327</td>
-<td style="text-align: left;">5,853,052</td>
-<td style="text-align: left;">6,198,484</td>
-<td style="text-align: left;">6,656,865</td>
+<td style="text-align: left;">21,244,000</td>
+<td style="text-align: left;">21,523,600</td>
+<td style="text-align: left;">21,730,400</td>
+<td style="text-align: left;">22,084,000</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left; font-weight: bold;">Margins (%)</td>
@@ -3876,36 +3829,2760 @@ window.onload = function() {
 </tr>
 <tr class="even">
 <td style="text-align: left;">Gross Margin</td>
-<td style="text-align: left;">0.566</td>
-<td style="text-align: left;">0.558</td>
-<td style="text-align: left;">0.573</td>
 <td style="text-align: left;">0.577</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">EBITDA Margin</td>
-<td style="text-align: left;">0.240</td>
-<td style="text-align: left;">0.232</td>
-<td style="text-align: left;">0.242</td>
-<td style="text-align: left;">0.243</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">EBIT Margin</td>
-<td style="text-align: left;">0.147</td>
-<td style="text-align: left;">0.141</td>
-<td style="text-align: left;">0.142</td>
-<td style="text-align: left;">0.144</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">EBT Margin</td>
-<td style="text-align: left;">0.130</td>
-<td style="text-align: left;">0.126</td>
-<td style="text-align: left;">0.128</td>
-<td style="text-align: left;">0.132</td>
+<td style="text-align: left;">0.577</td>
+<td style="text-align: left;">0.578</td>
+<td style="text-align: left;">0.576</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
+<section id="pvt" class="level2">
+<h2 class="anchored" data-anchor-id="pvt">Pvt</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Pvt</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">44,939,600</td>
+<td style="text-align: left;">45,498,800</td>
+<td style="text-align: left;">45,981,400</td>
+<td style="text-align: left;">46,518,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">19,193,400</td>
+<td style="text-align: left;">19,438,900</td>
+<td style="text-align: left;">19,619,900</td>
+<td style="text-align: left;">19,966,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.573</td>
+<td style="text-align: left;">0.573</td>
+<td style="text-align: left;">0.573</td>
+<td style="text-align: left;">0.571</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="ag" class="level3">
+<h3 class="anchored" data-anchor-id="ag">Ag</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Ag</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">589,000</td>
+<td style="text-align: left;">592,500</td>
+<td style="text-align: left;">612,600</td>
+<td style="text-align: left;">614,300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">346,000</td>
+<td style="text-align: left;">341,400</td>
+<td style="text-align: left;">348,400</td>
+<td style="text-align: left;">364,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.413</td>
+<td style="text-align: left;">0.424</td>
+<td style="text-align: left;">0.431</td>
+<td style="text-align: left;">0.406</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="ag.farms" class="level3">
+<h3 class="anchored" data-anchor-id="ag.farms">Ag.Farms</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Ag.Farms</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">525,600</td>
+<td style="text-align: left;">531,500</td>
+<td style="text-align: left;">549,600</td>
+<td style="text-align: left;">550,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">332,200</td>
+<td style="text-align: left;">328,200</td>
+<td style="text-align: left;">334,700</td>
+<td style="text-align: left;">349,400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.368</td>
+<td style="text-align: left;">0.382</td>
+<td style="text-align: left;">0.391</td>
+<td style="text-align: left;">0.365</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="ag.forest" class="level3">
+<h3 class="anchored" data-anchor-id="ag.forest">Ag.Forest</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Ag.Forest</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">63,400</td>
+<td style="text-align: left;">61,000</td>
+<td style="text-align: left;">63,000</td>
+<td style="text-align: left;">63,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">13,800</td>
+<td style="text-align: left;">13,200</td>
+<td style="text-align: left;">13,800</td>
+<td style="text-align: left;">15,400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.782</td>
+<td style="text-align: left;">0.784</td>
+<td style="text-align: left;">0.781</td>
+<td style="text-align: left;">0.759</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="min" class="level3">
+<h3 class="anchored" data-anchor-id="min">Min</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Min</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">704,600</td>
+<td style="text-align: left;">689,000</td>
+<td style="text-align: left;">680,800</td>
+<td style="text-align: left;">737,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">300,200</td>
+<td style="text-align: left;">298,000</td>
+<td style="text-align: left;">300,500</td>
+<td style="text-align: left;">328,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.574</td>
+<td style="text-align: left;">0.567</td>
+<td style="text-align: left;">0.559</td>
+<td style="text-align: left;">0.554</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="min.oilgas" class="level4">
+<h4 class="anchored" data-anchor-id="min.oilgas">Min.OilGas</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Min.OilGas</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">465,600</td>
+<td style="text-align: left;">450,500</td>
+<td style="text-align: left;">443,300</td>
+<td style="text-align: left;">490,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">213,700</td>
+<td style="text-align: left;">211,500</td>
+<td style="text-align: left;">214,800</td>
+<td style="text-align: left;">237,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.541</td>
+<td style="text-align: left;">0.531</td>
+<td style="text-align: left;">0.515</td>
+<td style="text-align: left;">0.517</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="min.xoilgas" class="level4">
+<h4 class="anchored" data-anchor-id="min.xoilgas">Min.XOilGas</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Min.XOilGas</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">136,500</td>
+<td style="text-align: left;">139,800</td>
+<td style="text-align: left;">139,300</td>
+<td style="text-align: left;">146,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">53,500</td>
+<td style="text-align: left;">55,000</td>
+<td style="text-align: left;">54,400</td>
+<td style="text-align: left;">59,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.609</td>
+<td style="text-align: left;">0.607</td>
+<td style="text-align: left;">0.609</td>
+<td style="text-align: left;">0.594</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="min.suppt" class="level4">
+<h4 class="anchored" data-anchor-id="min.suppt">Min.Suppt</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Min.Suppt</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">102,500</td>
+<td style="text-align: left;">98,600</td>
+<td style="text-align: left;">98,200</td>
+<td style="text-align: left;">99,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">33,100</td>
+<td style="text-align: left;">31,500</td>
+<td style="text-align: left;">31,300</td>
+<td style="text-align: left;">32,200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.677</td>
+<td style="text-align: left;">0.681</td>
+<td style="text-align: left;">0.682</td>
+<td style="text-align: left;">0.676</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="utl" class="level3">
+<h3 class="anchored" data-anchor-id="utl">Utl</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Utl</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">643,400</td>
+<td style="text-align: left;">635,000</td>
+<td style="text-align: left;">634,900</td>
+<td style="text-align: left;">674,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">201,900</td>
+<td style="text-align: left;">201,300</td>
+<td style="text-align: left;">196,600</td>
+<td style="text-align: left;">234,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.686</td>
+<td style="text-align: left;">0.683</td>
+<td style="text-align: left;">0.690</td>
+<td style="text-align: left;">0.653</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="constr" class="level3">
+<h3 class="anchored" data-anchor-id="constr">Constr</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Constr</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">2,509,600</td>
+<td style="text-align: left;">2,524,000</td>
+<td style="text-align: left;">2,553,100</td>
+<td style="text-align: left;">2,574,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,203,200</td>
+<td style="text-align: left;">1,205,400</td>
+<td style="text-align: left;">1,219,900</td>
+<td style="text-align: left;">1,232,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.521</td>
+<td style="text-align: left;">0.522</td>
+<td style="text-align: left;">0.522</td>
+<td style="text-align: left;">0.521</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="mfg" class="level3">
+<h3 class="anchored" data-anchor-id="mfg">Mfg</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Mfg</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">7,283,100</td>
+<td style="text-align: left;">7,309,200</td>
+<td style="text-align: left;">7,309,700</td>
+<td style="text-align: left;">7,360,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">4,373,600</td>
+<td style="text-align: left;">4,384,100</td>
+<td style="text-align: left;">4,372,400</td>
+<td style="text-align: left;">4,461,200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.399</td>
+<td style="text-align: left;">0.400</td>
+<td style="text-align: left;">0.402</td>
+<td style="text-align: left;">0.394</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="mfg.durgds" class="level4">
+<h4 class="anchored" data-anchor-id="mfg.durgds">Mfg.DurGds</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Mfg.DurGds</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,649,400</td>
+<td style="text-align: left;">3,682,700</td>
+<td style="text-align: left;">3,672,400</td>
+<td style="text-align: left;">3,709,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">2,101,600</td>
+<td style="text-align: left;">2,121,000</td>
+<td style="text-align: left;">2,110,200</td>
+<td style="text-align: left;">2,143,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.424</td>
+<td style="text-align: left;">0.424</td>
+<td style="text-align: left;">0.425</td>
+<td style="text-align: left;">0.422</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="mfg.xdurgds" class="level4">
+<h4 class="anchored" data-anchor-id="mfg.xdurgds">Mfg.XDurGds</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Mfg.XDurGds</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,633,700</td>
+<td style="text-align: left;">3,626,500</td>
+<td style="text-align: left;">3,637,300</td>
+<td style="text-align: left;">3,650,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">2,272,000</td>
+<td style="text-align: left;">2,263,100</td>
+<td style="text-align: left;">2,262,200</td>
+<td style="text-align: left;">2,317,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.375</td>
+<td style="text-align: left;">0.376</td>
+<td style="text-align: left;">0.378</td>
+<td style="text-align: left;">0.365</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="wholsl" class="level3">
+<h3 class="anchored" data-anchor-id="wholsl">Wholsl</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Wholsl</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">2,895,900</td>
+<td style="text-align: left;">2,956,900</td>
+<td style="text-align: left;">3,007,300</td>
+<td style="text-align: left;">3,061,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,205,400</td>
+<td style="text-align: left;">1,241,500</td>
+<td style="text-align: left;">1,270,800</td>
+<td style="text-align: left;">1,304,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.584</td>
+<td style="text-align: left;">0.580</td>
+<td style="text-align: left;">0.577</td>
+<td style="text-align: left;">0.574</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rtl" class="level3">
+<h3 class="anchored" data-anchor-id="rtl">Rtl</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Rtl</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">2,812,300</td>
+<td style="text-align: left;">2,852,700</td>
+<td style="text-align: left;">2,903,600</td>
+<td style="text-align: left;">2,915,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">988,800</td>
+<td style="text-align: left;">996,500</td>
+<td style="text-align: left;">1,035,200</td>
+<td style="text-align: left;">1,029,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.648</td>
+<td style="text-align: left;">0.651</td>
+<td style="text-align: left;">0.643</td>
+<td style="text-align: left;">0.647</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="rtl.motoveh" class="level4">
+<h4 class="anchored" data-anchor-id="rtl.motoveh">Rtl.MotoVeh</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Rtl.MotoVeh</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">532,200</td>
+<td style="text-align: left;">543,800</td>
+<td style="text-align: left;">571,300</td>
+<td style="text-align: left;">566,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">174,800</td>
+<td style="text-align: left;">178,100</td>
+<td style="text-align: left;">205,400</td>
+<td style="text-align: left;">195,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.672</td>
+<td style="text-align: left;">0.672</td>
+<td style="text-align: left;">0.640</td>
+<td style="text-align: left;">0.654</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rtl.foodbev" class="level4">
+<h4 class="anchored" data-anchor-id="rtl.foodbev">Rtl.FoodBev</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Rtl.FoodBev</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">347,800</td>
+<td style="text-align: left;">351,200</td>
+<td style="text-align: left;">354,500</td>
+<td style="text-align: left;">357,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">109,900</td>
+<td style="text-align: left;">110,000</td>
+<td style="text-align: left;">110,700</td>
+<td style="text-align: left;">112,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.684</td>
+<td style="text-align: left;">0.687</td>
+<td style="text-align: left;">0.688</td>
+<td style="text-align: left;">0.686</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rtl.genmerch" class="level4">
+<h4 class="anchored" data-anchor-id="rtl.genmerch">Rtl.GenMerch</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Rtl.GenMerch</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">317,000</td>
+<td style="text-align: left;">319,900</td>
+<td style="text-align: left;">322,100</td>
+<td style="text-align: left;">324,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">105,600</td>
+<td style="text-align: left;">105,100</td>
+<td style="text-align: left;">104,100</td>
+<td style="text-align: left;">104,500</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.667</td>
+<td style="text-align: left;">0.671</td>
+<td style="text-align: left;">0.677</td>
+<td style="text-align: left;">0.678</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="rtl.oth" class="level4">
+<h4 class="anchored" data-anchor-id="rtl.oth">Rtl.Oth</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Rtl.Oth</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,615,300</td>
+<td style="text-align: left;">1,637,900</td>
+<td style="text-align: left;">1,655,700</td>
+<td style="text-align: left;">1,666,300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">598,600</td>
+<td style="text-align: left;">603,300</td>
+<td style="text-align: left;">614,900</td>
+<td style="text-align: left;">616,700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.629</td>
+<td style="text-align: left;">0.632</td>
+<td style="text-align: left;">0.629</td>
+<td style="text-align: left;">0.630</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="trans" class="level3">
+<h3 class="anchored" data-anchor-id="trans">Trans</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,802,000</td>
+<td style="text-align: left;">1,825,900</td>
+<td style="text-align: left;">1,850,400</td>
+<td style="text-align: left;">1,864,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">837,100</td>
+<td style="text-align: left;">847,200</td>
+<td style="text-align: left;">868,500</td>
+<td style="text-align: left;">864,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.536</td>
+<td style="text-align: left;">0.536</td>
+<td style="text-align: left;">0.531</td>
+<td style="text-align: left;">0.536</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="trans.air" class="level4">
+<h4 class="anchored" data-anchor-id="trans.air">Trans.Air</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Air</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">326,800</td>
+<td style="text-align: left;">327,600</td>
+<td style="text-align: left;">338,400</td>
+<td style="text-align: left;">342,300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">158,800</td>
+<td style="text-align: left;">157,100</td>
+<td style="text-align: left;">168,200</td>
+<td style="text-align: left;">166,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.514</td>
+<td style="text-align: left;">0.520</td>
+<td style="text-align: left;">0.503</td>
+<td style="text-align: left;">0.515</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.rail" class="level4">
+<h4 class="anchored" data-anchor-id="trans.rail">Trans.Rail</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Rail</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">91,400</td>
+<td style="text-align: left;">91,700</td>
+<td style="text-align: left;">91,500</td>
+<td style="text-align: left;">91,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">38,500</td>
+<td style="text-align: left;">38,900</td>
+<td style="text-align: left;">38,500</td>
+<td style="text-align: left;">38,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.578</td>
+<td style="text-align: left;">0.575</td>
+<td style="text-align: left;">0.578</td>
+<td style="text-align: left;">0.576</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.water" class="level4">
+<h4 class="anchored" data-anchor-id="trans.water">Trans.Water</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Water</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">74,800</td>
+<td style="text-align: left;">82,100</td>
+<td style="text-align: left;">78,000</td>
+<td style="text-align: left;">76,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">49,600</td>
+<td style="text-align: left;">56,000</td>
+<td style="text-align: left;">53,700</td>
+<td style="text-align: left;">51,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.337</td>
+<td style="text-align: left;">0.319</td>
+<td style="text-align: left;">0.310</td>
+<td style="text-align: left;">0.317</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.truck" class="level4">
+<h4 class="anchored" data-anchor-id="trans.truck">Trans.Truck</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Truck</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">531,200</td>
+<td style="text-align: left;">526,200</td>
+<td style="text-align: left;">535,700</td>
+<td style="text-align: left;">537,400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">273,200</td>
+<td style="text-align: left;">268,700</td>
+<td style="text-align: left;">275,700</td>
+<td style="text-align: left;">274,700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.486</td>
+<td style="text-align: left;">0.489</td>
+<td style="text-align: left;">0.485</td>
+<td style="text-align: left;">0.489</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.transit" class="level4">
+<h4 class="anchored" data-anchor-id="trans.transit">Trans.Transit</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Transit</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">169,700</td>
+<td style="text-align: left;">176,100</td>
+<td style="text-align: left;">178,500</td>
+<td style="text-align: left;">180,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">93,200</td>
+<td style="text-align: left;">98,100</td>
+<td style="text-align: left;">98,600</td>
+<td style="text-align: left;">100,400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.451</td>
+<td style="text-align: left;">0.443</td>
+<td style="text-align: left;">0.448</td>
+<td style="text-align: left;">0.445</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.pipe" class="level4">
+<h4 class="anchored" data-anchor-id="trans.pipe">Trans.Pipe</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Pipe</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">72,400</td>
+<td style="text-align: left;">74,300</td>
+<td style="text-align: left;">74,600</td>
+<td style="text-align: left;">75,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">23,200</td>
+<td style="text-align: left;">23,900</td>
+<td style="text-align: left;">23,900</td>
+<td style="text-align: left;">24,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.680</td>
+<td style="text-align: left;">0.678</td>
+<td style="text-align: left;">0.678</td>
+<td style="text-align: left;">0.675</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.oth" class="level4">
+<h4 class="anchored" data-anchor-id="trans.oth">Trans.Oth</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Oth</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">349,000</td>
+<td style="text-align: left;">356,800</td>
+<td style="text-align: left;">355,000</td>
+<td style="text-align: left;">357,400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">137,200</td>
+<td style="text-align: left;">138,900</td>
+<td style="text-align: left;">135,000</td>
+<td style="text-align: left;">131,700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.607</td>
+<td style="text-align: left;">0.611</td>
+<td style="text-align: left;">0.620</td>
+<td style="text-align: left;">0.632</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="trans.warehs" class="level4">
+<h4 class="anchored" data-anchor-id="trans.warehs">Trans.Warehs</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Trans.Warehs</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">186,800</td>
+<td style="text-align: left;">191,100</td>
+<td style="text-align: left;">198,800</td>
+<td style="text-align: left;">203,100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">63,200</td>
+<td style="text-align: left;">65,600</td>
+<td style="text-align: left;">74,800</td>
+<td style="text-align: left;">76,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.662</td>
+<td style="text-align: left;">0.657</td>
+<td style="text-align: left;">0.624</td>
+<td style="text-align: left;">0.622</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="info" class="level3">
+<h3 class="anchored" data-anchor-id="info">Info</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Info</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">2,642,200</td>
+<td style="text-align: left;">2,710,100</td>
+<td style="text-align: left;">2,735,300</td>
+<td style="text-align: left;">2,775,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,085,500</td>
+<td style="text-align: left;">1,125,000</td>
+<td style="text-align: left;">1,135,300</td>
+<td style="text-align: left;">1,162,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.589</td>
+<td style="text-align: left;">0.585</td>
+<td style="text-align: left;">0.585</td>
+<td style="text-align: left;">0.581</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="info.publ" class="level4">
+<h4 class="anchored" data-anchor-id="info.publ">Info.Publ</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Info.Publ</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">645,300</td>
+<td style="text-align: left;">667,500</td>
+<td style="text-align: left;">668,000</td>
+<td style="text-align: left;">698,300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">220,100</td>
+<td style="text-align: left;">235,400</td>
+<td style="text-align: left;">234,700</td>
+<td style="text-align: left;">251,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.659</td>
+<td style="text-align: left;">0.647</td>
+<td style="text-align: left;">0.649</td>
+<td style="text-align: left;">0.639</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="info.motionpic" class="level4">
+<h4 class="anchored" data-anchor-id="info.motionpic">Info.MotionPic</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Info.MotionPic</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">200,600</td>
+<td style="text-align: left;">210,200</td>
+<td style="text-align: left;">214,500</td>
+<td style="text-align: left;">205,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">80,000</td>
+<td style="text-align: left;">85,300</td>
+<td style="text-align: left;">89,400</td>
+<td style="text-align: left;">85,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.601</td>
+<td style="text-align: left;">0.594</td>
+<td style="text-align: left;">0.583</td>
+<td style="text-align: left;">0.587</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="info.bcast" class="level4">
+<h4 class="anchored" data-anchor-id="info.bcast">Info.Bcast</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Info.Bcast</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">926,600</td>
+<td style="text-align: left;">934,900</td>
+<td style="text-align: left;">942,300</td>
+<td style="text-align: left;">938,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">432,700</td>
+<td style="text-align: left;">435,900</td>
+<td style="text-align: left;">437,700</td>
+<td style="text-align: left;">443,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.533</td>
+<td style="text-align: left;">0.534</td>
+<td style="text-align: left;">0.535</td>
+<td style="text-align: left;">0.528</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="info.dataproc" class="level4">
+<h4 class="anchored" data-anchor-id="info.dataproc">Info.DataProc</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Info.DataProc</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">869,700</td>
+<td style="text-align: left;">897,600</td>
+<td style="text-align: left;">910,500</td>
+<td style="text-align: left;">933,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">352,600</td>
+<td style="text-align: left;">368,300</td>
+<td style="text-align: left;">373,400</td>
+<td style="text-align: left;">382,400</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.595</td>
+<td style="text-align: left;">0.590</td>
+<td style="text-align: left;">0.590</td>
+<td style="text-align: left;">0.590</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="fin" class="level3">
+<h3 class="anchored" data-anchor-id="fin">Fin</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fin</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">9,819,500</td>
+<td style="text-align: left;">9,935,200</td>
+<td style="text-align: left;">10,035,700</td>
+<td style="text-align: left;">10,176,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">3,667,900</td>
+<td style="text-align: left;">3,701,800</td>
+<td style="text-align: left;">3,703,200</td>
+<td style="text-align: left;">3,785,700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.626</td>
+<td style="text-align: left;">0.627</td>
+<td style="text-align: left;">0.631</td>
+<td style="text-align: left;">0.628</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="fin.finins" class="level4">
+<h4 class="anchored" data-anchor-id="fin.finins">Fin.FinIns</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fin.FinIns</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,977,200</td>
+<td style="text-align: left;">4,053,600</td>
+<td style="text-align: left;">4,075,300</td>
+<td style="text-align: left;">4,155,400</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,831,700</td>
+<td style="text-align: left;">1,868,500</td>
+<td style="text-align: left;">1,838,200</td>
+<td style="text-align: left;">1,907,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.539</td>
+<td style="text-align: left;">0.539</td>
+<td style="text-align: left;">0.549</td>
+<td style="text-align: left;">0.541</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="fin.rent" class="level4">
+<h4 class="anchored" data-anchor-id="fin.rent">Fin.REnt</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fin.REnt</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">5,842,400</td>
+<td style="text-align: left;">5,881,600</td>
+<td style="text-align: left;">5,960,400</td>
+<td style="text-align: left;">6,021,100</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,836,100</td>
+<td style="text-align: left;">1,833,300</td>
+<td style="text-align: left;">1,865,000</td>
+<td style="text-align: left;">1,878,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.686</td>
+<td style="text-align: left;">0.688</td>
+<td style="text-align: left;">0.687</td>
+<td style="text-align: left;">0.688</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="prfsrv" class="level3">
+<h3 class="anchored" data-anchor-id="prfsrv">PrfSrv</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PrfSrv</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">5,821,700</td>
+<td style="text-align: left;">5,919,900</td>
+<td style="text-align: left;">5,993,300</td>
+<td style="text-align: left;">6,046,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">2,001,300</td>
+<td style="text-align: left;">2,042,100</td>
+<td style="text-align: left;">2,062,700</td>
+<td style="text-align: left;">2,075,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.656</td>
+<td style="text-align: left;">0.655</td>
+<td style="text-align: left;">0.656</td>
+<td style="text-align: left;">0.657</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="prfsrv.sci" class="level4">
+<h4 class="anchored" data-anchor-id="prfsrv.sci">PrfSrv.Sci</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PrfSrv.Sci</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,481,700</td>
+<td style="text-align: left;">3,535,300</td>
+<td style="text-align: left;">3,590,300</td>
+<td style="text-align: left;">3,606,600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,118,100</td>
+<td style="text-align: left;">1,136,100</td>
+<td style="text-align: left;">1,150,900</td>
+<td style="text-align: left;">1,149,200</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.679</td>
+<td style="text-align: left;">0.679</td>
+<td style="text-align: left;">0.679</td>
+<td style="text-align: left;">0.681</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="prfsrv.mgmt" class="level4">
+<h4 class="anchored" data-anchor-id="prfsrv.mgmt">PrfSrv.Mgmt</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PrfSrv.Mgmt</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">832,700</td>
+<td style="text-align: left;">860,100</td>
+<td style="text-align: left;">867,000</td>
+<td style="text-align: left;">893,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">300,400</td>
+<td style="text-align: left;">312,000</td>
+<td style="text-align: left;">314,200</td>
+<td style="text-align: left;">326,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.639</td>
+<td style="text-align: left;">0.637</td>
+<td style="text-align: left;">0.638</td>
+<td style="text-align: left;">0.635</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="prfsrv.admwst" class="level4">
+<h4 class="anchored" data-anchor-id="prfsrv.admwst">PrfSrv.AdmWst</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PrfSrv.AdmWst</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,507,200</td>
+<td style="text-align: left;">1,524,500</td>
+<td style="text-align: left;">1,536,000</td>
+<td style="text-align: left;">1,546,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">582,800</td>
+<td style="text-align: left;">594,000</td>
+<td style="text-align: left;">597,700</td>
+<td style="text-align: left;">600,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.613</td>
+<td style="text-align: left;">0.610</td>
+<td style="text-align: left;">0.611</td>
+<td style="text-align: left;">0.612</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="eduhth" class="level3">
+<h3 class="anchored" data-anchor-id="eduhth">EduHth</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – EduHth</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">4,044,000</td>
+<td style="text-align: left;">4,129,200</td>
+<td style="text-align: left;">4,191,800</td>
+<td style="text-align: left;">4,245,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,526,700</td>
+<td style="text-align: left;">1,565,900</td>
+<td style="text-align: left;">1,584,600</td>
+<td style="text-align: left;">1,613,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.622</td>
+<td style="text-align: left;">0.621</td>
+<td style="text-align: left;">0.622</td>
+<td style="text-align: left;">0.620</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="eduhth.edu" class="level4">
+<h4 class="anchored" data-anchor-id="eduhth.edu">EduHth.Edu</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – EduHth.Edu</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">496,800</td>
+<td style="text-align: left;">503,300</td>
+<td style="text-align: left;">508,200</td>
+<td style="text-align: left;">512,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">172,300</td>
+<td style="text-align: left;">171,000</td>
+<td style="text-align: left;">171,200</td>
+<td style="text-align: left;">175,700</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.653</td>
+<td style="text-align: left;">0.660</td>
+<td style="text-align: left;">0.663</td>
+<td style="text-align: left;">0.657</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="eduhth.hth" class="level4">
+<h4 class="anchored" data-anchor-id="eduhth.hth">EduHth.Hth</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – EduHth.Hth</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,547,200</td>
+<td style="text-align: left;">3,625,900</td>
+<td style="text-align: left;">3,683,600</td>
+<td style="text-align: left;">3,732,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,354,400</td>
+<td style="text-align: left;">1,394,900</td>
+<td style="text-align: left;">1,413,300</td>
+<td style="text-align: left;">1,437,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.618</td>
+<td style="text-align: left;">0.615</td>
+<td style="text-align: left;">0.616</td>
+<td style="text-align: left;">0.615</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="artacmdfd" class="level3">
+<h3 class="anchored" data-anchor-id="artacmdfd">ArtAcmdFd</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – ArtAcmdFd</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">2,288,800</td>
+<td style="text-align: left;">2,307,800</td>
+<td style="text-align: left;">2,358,400</td>
+<td style="text-align: left;">2,369,300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">996,200</td>
+<td style="text-align: left;">1,009,200</td>
+<td style="text-align: left;">1,044,300</td>
+<td style="text-align: left;">1,044,600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.565</td>
+<td style="text-align: left;">0.563</td>
+<td style="text-align: left;">0.557</td>
+<td style="text-align: left;">0.559</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="artacmdfd.art" class="level4">
+<h4 class="anchored" data-anchor-id="artacmdfd.art">ArtAcmdFd.Art</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – ArtAcmdFd.Art</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">561,400</td>
+<td style="text-align: left;">568,500</td>
+<td style="text-align: left;">586,700</td>
+<td style="text-align: left;">590,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">222,200</td>
+<td style="text-align: left;">227,400</td>
+<td style="text-align: left;">242,000</td>
+<td style="text-align: left;">240,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.604</td>
+<td style="text-align: left;">0.600</td>
+<td style="text-align: left;">0.588</td>
+<td style="text-align: left;">0.593</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="artacmdfd.acmdfdsrv" class="level4">
+<h4 class="anchored" data-anchor-id="artacmdfd.acmdfdsrv">ArtAcmdFd.AcmdFdSrv</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – ArtAcmdFd.AcmdFdSrv</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,727,300</td>
+<td style="text-align: left;">1,739,300</td>
+<td style="text-align: left;">1,771,700</td>
+<td style="text-align: left;">1,778,600</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">774,100</td>
+<td style="text-align: left;">781,800</td>
+<td style="text-align: left;">802,200</td>
+<td style="text-align: left;">804,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.552</td>
+<td style="text-align: left;">0.551</td>
+<td style="text-align: left;">0.547</td>
+<td style="text-align: left;">0.548</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="othsrvsxgov" class="level3">
+<h3 class="anchored" data-anchor-id="othsrvsxgov">OthSrvsXGov</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – OthSrvsXGov</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,083,500</td>
+<td style="text-align: left;">1,111,300</td>
+<td style="text-align: left;">1,114,600</td>
+<td style="text-align: left;">1,102,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">459,600</td>
+<td style="text-align: left;">479,300</td>
+<td style="text-align: left;">477,400</td>
+<td style="text-align: left;">465,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.576</td>
+<td style="text-align: left;">0.569</td>
+<td style="text-align: left;">0.572</td>
+<td style="text-align: left;">0.577</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="gov" class="level2">
+<h2 class="anchored" data-anchor-id="gov">Gov</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Gov</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">5,321,100</td>
+<td style="text-align: left;">5,399,700</td>
+<td style="text-align: left;">5,472,900</td>
+<td style="text-align: left;">5,527,900</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">2,050,600</td>
+<td style="text-align: left;">2,084,700</td>
+<td style="text-align: left;">2,110,500</td>
+<td style="text-align: left;">2,117,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.615</td>
+<td style="text-align: left;">0.614</td>
+<td style="text-align: left;">0.614</td>
+<td style="text-align: left;">0.617</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="fed" class="level3">
+<h3 class="anchored" data-anchor-id="fed">Fed</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fed</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,594,800</td>
+<td style="text-align: left;">1,634,900</td>
+<td style="text-align: left;">1,659,600</td>
+<td style="text-align: left;">1,654,800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">550,700</td>
+<td style="text-align: left;">576,100</td>
+<td style="text-align: left;">586,800</td>
+<td style="text-align: left;">564,100</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.655</td>
+<td style="text-align: left;">0.648</td>
+<td style="text-align: left;">0.646</td>
+<td style="text-align: left;">0.659</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="fed.gen" class="level4">
+<h4 class="anchored" data-anchor-id="fed.gen">Fed.Gen</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fed.Gen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">1,486,100</td>
+<td style="text-align: left;">1,524,700</td>
+<td style="text-align: left;">1,548,900</td>
+<td style="text-align: left;">1,544,700</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">506,900</td>
+<td style="text-align: left;">532,800</td>
+<td style="text-align: left;">543,900</td>
+<td style="text-align: left;">526,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.659</td>
+<td style="text-align: left;">0.651</td>
+<td style="text-align: left;">0.649</td>
+<td style="text-align: left;">0.659</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="fed.enterp" class="level4">
+<h4 class="anchored" data-anchor-id="fed.enterp">Fed.Enterp</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – Fed.Enterp</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">108,700</td>
+<td style="text-align: left;">110,200</td>
+<td style="text-align: left;">110,600</td>
+<td style="text-align: left;">110,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">43,800</td>
+<td style="text-align: left;">43,300</td>
+<td style="text-align: left;">42,800</td>
+<td style="text-align: left;">37,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.597</td>
+<td style="text-align: left;">0.607</td>
+<td style="text-align: left;">0.613</td>
+<td style="text-align: left;">0.656</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="stloc" class="level3">
+<h3 class="anchored" data-anchor-id="stloc">StLoc</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – StLoc</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,726,300</td>
+<td style="text-align: left;">3,764,800</td>
+<td style="text-align: left;">3,813,300</td>
+<td style="text-align: left;">3,873,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,499,900</td>
+<td style="text-align: left;">1,508,600</td>
+<td style="text-align: left;">1,523,700</td>
+<td style="text-align: left;">1,553,000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.597</td>
+<td style="text-align: left;">0.599</td>
+<td style="text-align: left;">0.600</td>
+<td style="text-align: left;">0.599</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="stloc.gen" class="level4">
+<h4 class="anchored" data-anchor-id="stloc.gen">StLoc.Gen</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – StLoc.Gen</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">3,236,700</td>
+<td style="text-align: left;">3,272,600</td>
+<td style="text-align: left;">3,308,500</td>
+<td style="text-align: left;">3,357,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">1,182,700</td>
+<td style="text-align: left;">1,191,200</td>
+<td style="text-align: left;">1,197,200</td>
+<td style="text-align: left;">1,219,300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.635</td>
+<td style="text-align: left;">0.636</td>
+<td style="text-align: left;">0.638</td>
+<td style="text-align: left;">0.637</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="stloc.enterp" class="level4">
+<h4 class="anchored" data-anchor-id="stloc.enterp">StLoc.Enterp</h4>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – StLoc.Enterp</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">489,600</td>
+<td style="text-align: left;">492,200</td>
+<td style="text-align: left;">504,800</td>
+<td style="text-align: left;">515,500</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">317,300</td>
+<td style="text-align: left;">317,400</td>
+<td style="text-align: left;">326,600</td>
+<td style="text-align: left;">333,800</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.352</td>
+<td style="text-align: left;">0.355</td>
+<td style="text-align: left;">0.353</td>
+<td style="text-align: left;">0.352</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+<section id="pvtgds" class="level1">
+<h1>PvtGds</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PvtGds</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">11,086,400</td>
+<td style="text-align: left;">11,114,600</td>
+<td style="text-align: left;">11,156,100</td>
+<td style="text-align: left;">11,286,000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">6,223,000</td>
+<td style="text-align: left;">6,229,000</td>
+<td style="text-align: left;">6,241,300</td>
+<td style="text-align: left;">6,386,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.439</td>
+<td style="text-align: left;">0.440</td>
+<td style="text-align: left;">0.441</td>
+<td style="text-align: left;">0.434</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="pvtsrvs" class="level1">
+<h1>PvtSrvs</h1>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-condensed caption-top table-sm small">
+<caption>Industry Income Statement (Mln$, SAAR) – PvtSrvs</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Accounting Concept</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q2</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q3</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2024Q4</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">2025Q1</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Gross Revenue</td>
+<td style="text-align: left;">33,853,300</td>
+<td style="text-align: left;">34,384,200</td>
+<td style="text-align: left;">34,825,200</td>
+<td style="text-align: left;">35,232,200</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">COGS</td>
+<td style="text-align: left;">12,970,400</td>
+<td style="text-align: left;">13,209,900</td>
+<td style="text-align: left;">13,378,600</td>
+<td style="text-align: left;">13,579,900</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; font-weight: bold;">Margins (%)</td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+<td style="text-align: left; font-weight: bold;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gross Margin</td>
+<td style="text-align: left;">0.617</td>
+<td style="text-align: left;">0.616</td>
+<td style="text-align: left;">0.616</td>
+<td style="text-align: left;">0.615</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 
 </main>
 <!-- /main column -->
