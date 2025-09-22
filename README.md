@@ -11,6 +11,10 @@ U.S. National Income
 - Corporate Income Statement (Annual) https://aguilarmike.github.io/marketobservatory/CorpIncome-Annual-Statement-GitDeploy.html
 
 - Corporate Income Statement (Quarterly) https://aguilarmike.github.io/marketobservatory/CorpIncome-Quarterly-Statement-GitDeploy.html
+  
+- Industry Income Statement (Annual) https://aguilarmike.github.io/marketobservatory/Industry-National-Annual-Statement-GitDeploy.html
+  
+- Industry Income Statement (Quarterly) https://aguilarmike.github.io/marketobservatory/Industry-National-Quarterly-Statement-GitDeploy.html
 
 - National Income EDA by Industry [https://aguilarmike.github.io/marketobservatory/Industry-National-Quarterly-Presentation-GitDeploy.html](https://aguilarmike.github.io/marketobservatory/Industry-National-Presentation-GitDeploy.html#/title-slide)
 
